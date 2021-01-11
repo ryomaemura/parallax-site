@@ -1,2 +1,1 @@
-# name
-## パララックスサイトのサンプル
+# Parallax Site

@@ -4,4 +4,46 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.parallax {
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  font-size: 200%;
+}
+
+.parallax .parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 100vh 0;
+}
+
+.parallax .parallax_layerbase {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.parallax .parallax_layerbase .title {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.parallax .parallax_layerback {
+  background-image: url(../images/programming.jpg);
+  background-size: cover;
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
+}
 /*# sourceMappingURL=style.css.map */
